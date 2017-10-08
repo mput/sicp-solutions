@@ -32,14 +32,12 @@
           ((= (expmod next-number number number) next-number) 
            (iter-test number (+ next-number 1)))
           (else #f)))
-  (cond ((and (iter-test number 1) (not (isPrime number)))
-         (display "Is carmichaels number: ")(display number)(newline))
-        ((and (iter-test number 1) (isPrime number))
-         (display "Is Prime number: ")(display number)(newline))
-        (else (display "Just number: ")(display number)(newline))))
+  (cond ((and (iter-test number 1) (not (prime? number)))
+         (display "Is carmichaels number: ")(display number)(newline))))
+      
 
-(test-carmichaels 561)
-(test-carmichaels 1105) 
-(test-carmichaels 1009)
-(test-carmichaels 1011)
-(test-carmichaels 6601)
+(define (find-carm number)
+  (test-carmichaels number)
+  (find-carm (+ number 1)))
+
+(find-carm 1)
