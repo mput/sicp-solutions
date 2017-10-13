@@ -11,7 +11,7 @@
                   (abs a)))
         (newb (abs b))
         (gcd-ab (abs (gcd a b))))
-       (cons (/ newa gcd-ab) (/ (abs b) gcd-ab)) ))
+       (cons (/ newa gcd-ab) (/ (abs b) gcd-ab))))
 
 (define (numer x) (car x))
 (define (denom x) (cdr x))
