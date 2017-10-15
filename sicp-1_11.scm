@@ -1,3 +1,5 @@
+#! /usr/local/bin/csi -s
+
 (define (fun n)
   (cond ((< n 3) n)
         (else (+ (fun (- n 1)) 

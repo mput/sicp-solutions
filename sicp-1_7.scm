@@ -1,3 +1,5 @@
+#! /usr/local/bin/csi -s
+
 (define (square x) (* x x))
 
 (define (isGoodEnaugh guess pred) 

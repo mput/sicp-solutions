@@ -1,3 +1,5 @@
+#! /usr/local/bin/csi -s
+
 (use sicp)
 
 (define (fast-exp b n acc)
