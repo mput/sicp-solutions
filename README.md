@@ -1,0 +1,1 @@
+## My solutions for exercise in *great and terrible* [SICP](https://mitpress.mit.edu/sicp/full-text/book/book.html) 
