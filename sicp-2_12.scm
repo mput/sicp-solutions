@@ -1,11 +1,13 @@
 #! /usr/local/bin/csi -s
 (use sicp)
 
-
+(define (take-percent number perc) 
+  (* number (/ perc 100)))
 
 (define (make-interval a b) (cons a b))
 (define (lower-bound int) (car int))
 (define (upper-bound int) (cdr int))
+
 
 (define (add-interval x y)
   (make-interval (+ (lower-bound x) (lower-bound y))
@@ -26,24 +28,20 @@
 (define (make-center-width c w) 
   (make-interval (- c w) (+ c w)))
 
-(define (center int) 
-  (/ 2 (- (upper-bound int) (lower-bound int))))
-
 (define (width int) 
-  (/ 2 (- (upper-bound int) (lower-bound int))))
+  (/ (- (upper-bound int) (lower-bound int)) 2))
 
+(define (center int) 
+  (/ (+ (upper-bound int) (lower-bound int)) 2))
 
+(define (make-center-percent c p)
+ (make-interval (- c (take-percent c p)) (+ c (take-percent c p))))
 
-(define first (make-interval 4.5 5.5))
-(define second (make-interval 8 12))
+(define (percent int)
+  (* 100 (/ (width int) (center int))))
 
-(define first_2 (make-interval 0.5 2))
-(define second_2 (make-interval -0.2 0.4))
+(define int-perc (make-center-percent 15 2)) 
 
-
-(define mulint (mul-interval first second))
-(print mulint)
-
-(define mulint_2 (mul-interval first_2 second_2))
-(print mulint_2)
-
+(print int-perc)
+(print (center int-perc))
+(print (percent int-perc))
