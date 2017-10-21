@@ -17,6 +17,8 @@
   (queen-cols board-size))
 
 (define empty-board nil)
+(define (adjoin-position new-row rest-of-queens) (cons new-row rest-of-queens))
+(define (safe? k position) #t)
 
 (define (enumerate-interval start finish)
   (if (> start finish)
@@ -27,4 +29,4 @@
   (accumulate append nil (map fun seq)))
 
 
-(print (queens 5))
+(print (queens 2))
