@@ -133,26 +133,26 @@
   (put 'equ? '(scheme-number scheme-number)
        (lambda (x y) (= x y)))
   'done)
-        
+  
+  
 (install-scheme-number-package)
 (install-complex-package)
 (install-rational-package)
 
-(print "Test usual number")
-(print (equ? 5 2) " True")
-(print (equ? 5 4) " False")
+(print 'Ok)
 
-(print "Test rational number")
-(define first-rat (make-rational 2 5))
-(define second-rat (make-rational 3 5))
-(define third-rat (make-rational 4 10))
+(define (tests) 
+    (print "Test usual number")
+    (print (equ? 5 2) " True")
+    (print (equ? 5 4) " False")
 
-(print (equ? first-rat second-rat) " False")
-(print (equ? first-rat third-rat) " True")
+    (print "Test rational number")
+    (define first-rat (make-rational 2 5))
+    (define second-rat (make-rational 3 5))
+    (define third-rat (make-rational 4 10))
 
-; (print "Test complex number number")
-; (define first-compl (make-complex-from-real-imag 5 2))
-; (define second-compl (make-complex-from-real-imag 5 3))
+    (print (equ? first-rat second-rat) " False")
+    (print (equ? first-rat third-rat) " True"))
 
-; (print (equ? first-compl second-compl) " False")
-; (print (equ? first-compl first-compl) " True")
+; (tests)
+
