@@ -22,7 +22,7 @@
          (else -1))
    (+ a 1))
 
-; Output of those expressions are:
+; Output of these expressions are:
 ; 0
 ; 12
 ; 8
