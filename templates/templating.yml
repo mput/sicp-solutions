@@ -1,0 +1,19 @@
+---
+- hosts: all
+  vars:
+    solutionFileName: "{{ playbook_dir }}/../solutions/{{ exc }}.rkt"
+    testFileName: "{{ playbook_dir }}/../tests/{{ exc }}.test.rkt"
+  tasks:
+    - name: Copy templates
+      template:
+        src: "{{ playbook_dir }}/files/{{ item.source }}"
+        dest: "{{ item.dest }}"
+      with_items:
+        - { source: "x_xx.rkt", dest: "{{ solutionFileName }}" }
+        - { source: "x_xx.test.rkt", dest: "{{ testFileName }}" }
+    - name: Add description to readme
+      lineinfile:
+        insertafter: EOF
+        state: present
+        path: "{{ playbook_dir }}/../README.md"
+        line: "  - [Exercise {{ exc | regex_replace('_', '.') }}](./solutions/{{ exc  }}.rkt) [(test)](./tests/{{ exc }}.test.rkt)\n"
