@@ -1,6 +1,6 @@
-#lang sicp
-(#%require rackunit "../solutions/1_02.rkt")
-(#%require rackunit/text-ui)
+#lang racket
+(require rackunit "../solutions/1_02.rkt")
+(require rackunit/text-ui)
 
 (define tests
   (test-suite

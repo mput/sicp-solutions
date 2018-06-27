@@ -1,6 +1,6 @@
-#lang sicp
+#lang racket
 
-(#%provide solution)
+(provide solution)
 
 (define (square a1) (* a1 a1))
 

@@ -1,6 +1,6 @@
-#lang sicp
+#lang racket
 
-(#%provide expression)
+(provide expression)
 
 (define  expression (/
                       (+ 5 4 (- 2
