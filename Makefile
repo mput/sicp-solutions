@@ -5,7 +5,7 @@ new:
 	ansible-playbook templates/templating.yml -i localhost, --connection=local -e exc=$(e) -v
 
 run_tests:
-	for file in ./tests/*.test.rkt; do racket "$$file"; done;
+	raco test -t ./tests
 
 sicp_install:
 	raco pkg install sicp
