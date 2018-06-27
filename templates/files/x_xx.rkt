@@ -1,7 +1,7 @@
-#lang sicp
+#lang racket
 #| Solution for exercise {{ exc}}. |#
 
-(#%provide soution)
+(provide soution)
 
 (define soution 1)
 

@@ -1,8 +1,8 @@
-#lang sicp
+#lang racket
 
-(#%require rackunit/text-ui)
-(#%require rackunit "../solutions/utils.rkt")
-(#%require rackunit "../solutions/{{ exc }}.rkt")
+(require rackunit/text-ui)
+(require rackunit "../solutions/utils.rkt")
+(require rackunit "../solutions/{{ exc }}.rkt")
 
 
 (define tests
