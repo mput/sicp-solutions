@@ -16,4 +16,4 @@
         insertafter: EOF
         state: present
         path: "{{ playbook_dir }}/../README.md"
-        line: "  - [Exercise {{ exc | regex_replace('_', '.') }}](./solutions/{{ exc  }}.rkt) [(test)](./tests/{{ exc }}.test.rkt)\n"
+        line: "  - [Exercise {{ exc | regex_replace('_', '.') }}](./solutions/{{ exc  }}.rkt) [(test)](./tests/{{ exc }}.test.rkt)"
