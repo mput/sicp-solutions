@@ -2,7 +2,7 @@
 #| Solution for exercise 1_07. |#
 
 (require rackunit "../solutions/utils.rkt")
-(provide my-sqrt)
+(provide my-sqrt good-enough?)
 
 (define (my-sqrt value)
   (sqtr-iter value 1.0 0))
