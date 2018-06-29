@@ -1,5 +1,6 @@
 ---
 - hosts: all
+  gather_facts: no
   vars:
     solutionFileName: "{{ playbook_dir }}/../solutions/{{ exc }}.rkt"
     testFileName: "{{ playbook_dir }}/../tests/{{ exc }}.test.rkt"
@@ -8,6 +9,7 @@
       template:
         src: "{{ playbook_dir }}/files/{{ item.source }}"
         dest: "{{ item.dest }}"
+        force: no
       with_items:
         - { source: "x_xx.rkt", dest: "{{ solutionFileName }}" }
         - { source: "x_xx.test.rkt", dest: "{{ testFileName }}" }
