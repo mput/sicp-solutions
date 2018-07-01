@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/mput/sicp-solutions.svg?branch=master)](https://travis-ci.org/mput/sicp-solutions)
 ## My solutions for exercise from *great and terrible* [SICP](https://mitpress.mit.edu/sicp/full-text/book/book.html)
 ### Chapter 1. Building Abstractions with Procedures
 1.1 The Elements of Programming
