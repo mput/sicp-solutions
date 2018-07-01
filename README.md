@@ -8,3 +8,4 @@
   - [Exercise 1.07](./solutions/1_07.rkt) [(test)](./tests/1_07.test.rkt)
   - [Exercise 1.08](./solutions/1_08.rkt) [(test)](./tests/1_08.test.rkt)
   - [Exercise 1.09](./solutions/1_09.rkt)
+  - [Exercise 1.11](./solutions/1_11.rkt) [(test)](./tests/1_11.test.rkt)
