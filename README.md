@@ -10,3 +10,4 @@
   - [Exercise 1.09](./solutions/1_09.rkt)
   - [Exercise 1.11](./solutions/1_11.rkt) [(test)](./tests/1_11.test.rkt)
   - [Exercise 1.12](./solutions/1_12.rkt) [(test)](./tests/1_12.test.rkt)
+  - [Exercise 1.14](./solutions/1_14.rkt)
