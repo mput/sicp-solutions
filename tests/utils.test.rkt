@@ -25,7 +25,17 @@
       (check-false (aprox-equal-at -10 -10.5 0.2))
       (check-false (aprox-equal-at 0.5 -0.2 0.5)))))
 
+(define even?-test
+  (test-suite
+    "Test for (square)"
+    (check-true (even? 6))
+    (check-true (even? 2))
+    (check-false (even? 1))
+    (check-false (even? 11))))
+
+
 
 (run-tests square-test 'verbose)
 (run-tests aprox-equal-at-tests 'verbose)
+(run-tests even?-test 'verbose)
 
