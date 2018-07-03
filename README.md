@@ -10,4 +10,8 @@
   - [Exercise 1.09](./solutions/1_09.rkt)
   - [Exercise 1.11](./solutions/1_11.rkt) [(test)](./tests/1_11.test.rkt)
   - [Exercise 1.12](./solutions/1_12.rkt) [(test)](./tests/1_12.test.rkt)
+<<<<<<< HEAD
   - [Exercise 1.14](./solutions/1_14.rkt) [(test)](./tests/1_14.test.rkt)
+=======
+  - [Exercise 1.14](./solutions/1_14.jpeg)
+>>>>>>> f2595029f6e36616d9ad145faf6d1def16fe31dc
