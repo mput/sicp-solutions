@@ -11,3 +11,4 @@
   - [Exercise 1.11](./solutions/1_11.rkt) [(test)](./tests/1_11.test.rkt)
   - [Exercise 1.12](./solutions/1_12.rkt) [(test)](./tests/1_12.test.rkt)
   - [Exercise 1.14](./solutions/1_14.jpeg)
+  - [Exercise 1.17](./solutions/1_17.rkt) [(test)](./tests/1_17.test.rkt)
