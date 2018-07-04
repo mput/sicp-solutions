@@ -1,7 +1,7 @@
 #lang racket
 
 (require rackunit/text-ui)
-(require rackunit "../solutions/1_17.rkt")
+(require rackunit "../solutions/1_18.rkt")
 
 
 (define (tests proc)
@@ -13,4 +13,4 @@
     (check-equal? (proc 0 0) 0 "Zero case")
     (check-equal? (proc 23 1) (* 23 1) "Mult to one case")))
 
-(run-tests (tests fast-mult-recrs) 'verbose)
+(run-tests (tests fast-mult-iter) 'verbose)

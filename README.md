@@ -13,3 +13,4 @@
   - [Exercise 1.14](./solutions/1_14.jpeg)
   - [Exercise 1.16](./solutions/1_16.rkt) [(test)](./tests/1_16.test.rkt)
   - [Exercise 1.17](./solutions/1_17.rkt) [(test)](./tests/1_17.test.rkt)
+  - [Exercise 1.18](./solutions/1_18.rkt) [(test)](./tests/1_18.test.rkt)
