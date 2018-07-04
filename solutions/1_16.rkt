@@ -6,7 +6,6 @@
 
 (define (expt-iter number power)
   (define (iter acc curent-number curent-power)
-    (displayln (list acc curent-number curent-power))
     (cond ((= curent-power 0) acc)
           ((even? curent-power) (iter acc (square curent-number) (/ curent-power 2)))
           (else (iter (* acc curent-number) curent-number (- curent-power 1)))))
