@@ -14,3 +14,7 @@
   - [Exercise 1.16](./solutions/1_16.rkt) [(test)](./tests/1_16.test.rkt)
   - [Exercise 1.17](./solutions/1_17.rkt) [(test)](./tests/1_17.test.rkt)
   - [Exercise 1.18](./solutions/1_18.rkt) [(test)](./tests/1_18.test.rkt)
+  - [Exercise 1.21](./solutions/1_21.rkt) [(test)](./tests/1_21.test.rkt)
+  - [Exercise 1.22](./solutions/1_22.rkt) [(test)](./tests/1_22.test.rkt)
+  - [Exercise 1.23](./solutions/1_23.rkt) [(test)](./tests/1_23.test.rkt)
+  - [Exercise 1.24](./solutions/1_24.rkt) [(test)](./tests/1_24.test.rkt)

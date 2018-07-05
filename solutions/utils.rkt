@@ -9,3 +9,4 @@
   (<= (abs (- arg1 arg2)) accuracy))
 
 (define (even? number) (= (remainder number 2) 0))
+

@@ -34,8 +34,6 @@
     (check-false (even? 11))))
 
 
-
 (run-tests square-test 'verbose)
 (run-tests aprox-equal-at-tests 'verbose)
 (run-tests even?-test 'verbose)
-

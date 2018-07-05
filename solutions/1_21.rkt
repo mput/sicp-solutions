@@ -2,7 +2,7 @@
 #| Solution for exercise 1_21. |#
 
 (require rackunit "../solutions/utils.rkt")
-(provide smallest-divisor)
+(provide smallest-divisor divisor?)
 
 (define (divisor? a b) (= (remainder b a) 0))
 
