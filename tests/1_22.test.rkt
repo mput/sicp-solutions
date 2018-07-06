@@ -13,7 +13,7 @@
      (check-true (prime? 199))
      (check-true (prime? 900307)))
     (test-case
-      "Tests for truzy"
+      "Tests for falsy"
      (check-false (prime? 19999))
      (check-false (prime? 15))
      (check-false (prime? 900309)))))

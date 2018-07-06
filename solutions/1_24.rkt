@@ -6,7 +6,7 @@
 (require rackunit "../solutions/1_22.rkt")
 (require rackunit "../solutions/1_23.rkt")
 
-(provide fast-prime? expmod)
+(provide fast-prime? expmod random-smaller-than)
 
 (define (random-smaller-than a)
   (define max-a (if (> a (expt 10 9))
@@ -39,14 +39,14 @@
 
 
 
-(find-primes prime? (expt 10 10) 3)
-(find-primes prime? (expt 10 11) 3)
+#| (find-primes prime? (expt 10 10) 3) |#
+#| (find-primes prime? (expt 10 11) 3) |#
 
-(find-primes better-prime? (expt 10 10) 3)
-(find-primes better-prime? (expt 10 11) 3)
+#| (find-primes better-prime? (expt 10 10) 3) |#
+#| (find-primes better-prime? (expt 10 11) 3) |#
 
-(find-primes fast-prime? (expt 10 10) 3)
-(find-primes fast-prime? (expt 10 12) 3)
+#| (find-primes fast-prime? (expt 10 10) 3) |#
+#| (find-primes fast-prime? (expt 10 12) 3) |#
 
 
 

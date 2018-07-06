@@ -19,9 +19,13 @@
       "Tests for truzy"
      (check-true (fast-prime? 7))
      (check-true (fast-prime? 199))
-     (check-true (fast-prime? 900307)))
+     (check-true (fast-prime? 900307))
+     (check-true (fast-prime? 561))  ;; Carmichle number, 561 = 3 * 11 * 7.
+     (check-true (fast-prime? 60977817398996785))  ;; Carmichle number
+     (check-true (fast-prime? 1590231231043178376951698401))  ;; Carmichle number
+     (check-true (fast-prime? 9746347772161)))  ;; Carmichle number
     (test-case
-      "Tests for truzy"
+      "Tests for falsy"
      (check-false (fast-prime? 19999))
      (check-false (fast-prime? 15))
      (check-false (fast-prime? 900309)))))

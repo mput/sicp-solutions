@@ -12,7 +12,7 @@
      (check-true (better-prime? 199))
      (check-true (better-prime? 900307)))
     (test-case
-      "Tests for truzy"
+      "Tests for falsy"
      (check-false (better-prime? 19999))
      (check-false (better-prime? 15))
      (check-false (better-prime? 900309)))))
