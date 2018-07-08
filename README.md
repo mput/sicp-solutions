@@ -20,3 +20,4 @@
   - [Exercise 1.24](./solutions/1_24.rkt) [(test)](./tests/1_24.test.rkt)
   - [Exercise 1.28](./solutions/1_28.rkt) [(test)](./tests/1_28.test.rkt)
   - [Exercise 1.29](./solutions/1_29.rkt) [(test)](./tests/1_29.test.rkt)
+  - [Exercise 1.30](./solutions/1_30.rkt) [(test)](./tests/1_30.test.rkt)
