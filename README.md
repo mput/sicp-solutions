@@ -19,3 +19,4 @@
   - [Exercise 1.23](./solutions/1_23.rkt) [(test)](./tests/1_23.test.rkt)
   - [Exercise 1.24](./solutions/1_24.rkt) [(test)](./tests/1_24.test.rkt)
   - [Exercise 1.28](./solutions/1_28.rkt) [(test)](./tests/1_28.test.rkt)
+  - [Exercise 1.29](./solutions/1_29.rkt) [(test)](./tests/1_29.test.rkt)
