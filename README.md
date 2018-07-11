@@ -24,4 +24,5 @@
   - [Exercise 1.31](./solutions/1_31.rkt) [(test)](./tests/1_31.test.rkt)
   - [Exercise 1.32](./solutions/1_32.rkt) [(test)](./tests/1_32.test.rkt)
   - [Exercise 1.33](./solutions/1_33.rkt) [(test)](./tests/1_33.test.rkt)
+  - [Exercise 1.34](./solutions/1_34.txt)
   - [Exercise 1.35](./solutions/1_35.rkt) [(test)](./tests/1_35.test.rkt)
