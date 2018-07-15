@@ -1,7 +1,7 @@
 #lang racket
 #| My frequently used utils |#
 
-(provide square cube aprox-equal-at even?)
+(provide square cube aprox-equal-at even? inc)
 
 (define (square arg) (* arg arg))
 (define (cube arg) (* arg arg arg))
@@ -10,4 +10,6 @@
   (<= (abs (- arg1 arg2)) accuracy))
 
 (define (even? number) (= (remainder number 2) 0))
+
+(define (inc x) (+ x 1))
 

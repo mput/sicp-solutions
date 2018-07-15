@@ -33,7 +33,13 @@
     (check-false (even? 1))
     (check-false (even? 11))))
 
+(define inc-test
+  (test-suite
+    "Test for (inc)"
+    (check-equal? (inc 2) 3)))
+
 
 (run-tests square-test 'verbose)
 (run-tests aprox-equal-at-tests 'verbose)
 (run-tests even?-test 'verbose)
+(run-tests inc-test 'verbose)
