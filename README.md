@@ -33,3 +33,5 @@
   - [Exercise 1.41](./solutions/1_41.rkt) [(test)](./tests/1_41.test.rkt)
   - [Exercise 1.42](./solutions/1_42.rkt) [(test)](./tests/1_42.test.rkt)
   - [Exercise 1.43](./solutions/1_43.rkt) [(test)](./tests/1_43.test.rkt)
+  - [Exercise 1.44](./solutions/1_44.rkt) [(test)](./tests/1_44.test.rkt)
+  - [Exercise 1.46](./solutions/1_46.rkt) [(test)](./tests/1_46.test.rkt)
