@@ -39,3 +39,4 @@
   - [Exercise 1.46](./solutions/1_46.rkt) [(test)](./tests/1_46.test.rkt) *Абстракция для стратегии пошагового улучшения.*
 ## Глава 2. Построение абстракций с помощью данных.
   - [Exercise 2.01](./solutions/2_01.rkt) [(test)](./tests/2_01.test.rkt)
+  - [Exercise 2.02](./solutions/2_02.rkt) [(test)](./tests/2_02.test.rkt)
