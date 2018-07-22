@@ -44,3 +44,4 @@
   - [Exercise 2.04](./solutions/2_04.rkt) [(test)](./tests/2_04.test.rkt)
   - [Exercise 2.07](./solutions/2_07.rkt) [(test)](./tests/2_07.test.rkt)
   - [Exercise 2.08](./solutions/2_08.rkt) [(test)](./tests/2_08.test.rkt)
+  - [Exercise 2.09](./solutions/2_09.rkt) [(test)](./tests/2_09.test.rkt)
