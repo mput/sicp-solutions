@@ -38,6 +38,7 @@
   - [Exercise 1.44](./solutions/1_44.rkt) [(test)](./tests/1_44.test.rkt)
   - [Exercise 1.46](./solutions/1_46.rkt) [(test)](./tests/1_46.test.rkt) *Абстракция для стратегии пошагового улучшения.*
 ## Глава 2. Построение абстракций с помощью данных.
+### 2.1. Введение в абстракцию данных.
   - [Exercise 2.01](./solutions/2_01.rkt) [(test)](./tests/2_01.test.rkt)
   - [Exercise 2.02](./solutions/2_02.rkt) [(test)](./tests/2_02.test.rkt)
   - [Exercise 2.03](./solutions/2_03.rkt) [(test)](./tests/2_03.test.rkt)
@@ -46,4 +47,6 @@
   - [Exercise 2.08](./solutions/2_08.rkt) [(test)](./tests/2_08.test.rkt)
   - [Exercise 2.09](./solutions/2_09.rkt) [(test)](./tests/2_09.test.rkt)
   - [Exercise 2.12](./solutions/2_12.rkt) [(test)](./tests/2_12.test.rkt)
-  - [Exercise 2.17](./solutions/2_17.rkt) [(test)](./tests/2_17.test.rkt) *Получение последней пары из списка*
+### 2.2. Иерархарические данные и свойство замыкания.
+  - [Exercise 2.17](./solutions/2_17.rkt) [(test)](./tests/2_17.test.rkt) *Получение последней пары из списка.*
+  - [Exercise 2.18](./solutions/2_18.rkt) [(test)](./tests/2_18.test.rkt) *Reverse list.*
