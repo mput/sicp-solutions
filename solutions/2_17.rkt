@@ -5,7 +5,7 @@
 (provide last-pair)
 
 (define (last-pair items)
-  (if (null? (cdr items))
-    items
-    (last-pair (cdr items))))
+  (cond ((null? items) (error "List can't be empty"))
+        ((null? (cdr items)) items)
+        (else (last-pair (cdr items)))))
 
