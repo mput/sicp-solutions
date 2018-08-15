@@ -46,3 +46,4 @@
   - [Exercise 2.08](./solutions/2_08.rkt) [(test)](./tests/2_08.test.rkt)
   - [Exercise 2.09](./solutions/2_09.rkt) [(test)](./tests/2_09.test.rkt)
   - [Exercise 2.12](./solutions/2_12.rkt) [(test)](./tests/2_12.test.rkt)
+  - [Exercise 2.17](./solutions/2_17.rkt) [(test)](./tests/2_17.test.rkt) *Получение последней пары из списка*
