@@ -51,3 +51,4 @@
   - [Exercise 2.17](./solutions/2_17.rkt) [(test)](./tests/2_17.test.rkt) *Получение последней пары из списка.*
   - [Exercise 2.18](./solutions/2_18.rkt) [(test)](./tests/2_18.test.rkt) *Reverse list.*
   - [Exercise 2.19](./solutions/2_19.rkt) [(test)](./tests/2_19.test.rkt)
+  - [Exercise 2.20](./solutions/2_20.rkt) [(test)](./tests/2_20.test.rkt)
