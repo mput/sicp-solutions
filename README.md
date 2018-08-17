@@ -52,3 +52,5 @@
   - [Exercise 2.18](./solutions/2_18.rkt) [(test)](./tests/2_18.test.rkt) *Reverse list.*
   - [Exercise 2.19](./solutions/2_19.rkt) [(test)](./tests/2_19.test.rkt)
   - [Exercise 2.20](./solutions/2_20.rkt) [(test)](./tests/2_20.test.rkt)
+  - [Exercise 2.21](./solutions/2_21.rkt) [(test)](./tests/2_21.test.rkt)
+  - [Exercise 2.23](./solutions/2_23.rkt) *for-each*
