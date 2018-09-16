@@ -57,3 +57,4 @@
   - [Exercise 2.24](./solutions/2_24.jpg)
   - [Exercise 2.25](./solutions/2_25.rkt) [(test)](./tests/2_25.test.rkt)
   - [Exercise 2.27](./solutions/2_27.rkt) [(test)](./tests/2_27.test.rkt) *Deep-reverse*
+  - [Exercise 2.28](./solutions/2_28.rkt) [(test)](./tests/2_28.test.rkt) *"Распремление" дерева*
