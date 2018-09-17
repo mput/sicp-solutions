@@ -59,3 +59,4 @@
   - [Exercise 2.27](./solutions/2_27.rkt) [(test)](./tests/2_27.test.rkt) *Deep-reverse*
   - [Exercise 2.28](./solutions/2_28.rkt) [(test)](./tests/2_28.test.rkt) *"Распремление" дерева*
   - [Exercise 2.29](./solutions/2_29.rkt) [(test)](./tests/2_29.test.rkt) *Бинарный мобиль и его сбалансированность*
+  - [Exercise 2.30](./solutions/2_30.rkt) [(test)](./tests/2_30.test.rkt)
