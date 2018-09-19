@@ -63,3 +63,4 @@
   - [Exercise 2.31](./solutions/2_31.rkt) [(test)](./tests/2_31.test.rkt) *Tree map*
   - [Exercise 2.32](./solutions/2_32.rkt) [(test)](./tests/2_32.test.rkt) *Находим все подмножества в множестве*
   - [Exercise 2.33](./solutions/2_33.rkt) [(test)](./tests/2_33.test.rkt)
+  - [Exercise 2.34](./solutions/2_34.rkt) [(test)](./tests/2_34.test.rkt)
