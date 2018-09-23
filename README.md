@@ -67,3 +67,4 @@
   - [Exercise 2.35](./solutions/2_35.rkt) [(test)](./tests/2_35.test.rkt)
   - [Exercise 2.36](./solutions/2_36.rkt) [(test)](./tests/2_36.test.rkt)
   - [Exercise 2.39](./solutions/2_39.rkt) [(test)](./tests/2_39.test.rkt) *reverse с помощью foldr & foldl*
+  - [Exercise 2.40](./solutions/2_40.rkt) [(test)](./tests/2_40.test.rkt)
