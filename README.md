@@ -69,3 +69,4 @@
   - [Exercise 2.39](./solutions/2_39.rkt) [(test)](./tests/2_39.test.rkt) *reverse с помощью foldr & foldl*
   - [Exercise 2.40](./solutions/2_40.rkt) [(test)](./tests/2_40.test.rkt)
   - [Exercise 2.41](./solutions/2_41.rkt) [(test)](./tests/2_41.test.rkt)
+  - [Exercise 2.42](./solutions/2_42.rkt) [(test)](./tests/2_42.test.rkt) *Задача о восьми ферьзях.*

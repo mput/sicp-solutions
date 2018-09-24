@@ -2,7 +2,7 @@
 #| Solution for exercise 2_40. |#
 
 (require rackunit "../solutions/utils.rkt")
-(provide uniq-pairs)
+(provide uniq-pairs enumerate flatmap)
 
 (define (flatmap proc seq)
   (foldr append '() (map proc seq)))
