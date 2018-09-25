@@ -70,4 +70,5 @@
   - [Exercise 2.40](./solutions/2_40.rkt) [(test)](./tests/2_40.test.rkt)
   - [Exercise 2.41](./solutions/2_41.rkt) [(test)](./tests/2_41.test.rkt)
   - [Exercise 2.42](./solutions/2_42.rkt) [(test)](./tests/2_42.test.rkt) *Задача о восьми ферьзях.*
-  - [Exercise 2.44](./solutions/2_44.rkt)
+  - [Exercise 2.44](./solutions/2_44.rkt) *Язык описания изображений*
+  - [Exercise 2.45](./solutions/2_45.rkt)
