@@ -74,3 +74,5 @@
   - [Exercise 2.45](./solutions/2_45.rkt)
   - [Exercise 2.46](./solutions/2_46.rkt) [(test)](./tests/2_46.test.rkt)
   - [Exercise 2.47](./solutions/2_47.rkt) [(test)](./tests/2_47.test.rkt)
+  - [Exercise 2.48](./solutions/2_48.rkt) [(test)](./tests/2_48.test.rkt)
+  - [Exercise 2.49](./solutions/2_49.rkt)
