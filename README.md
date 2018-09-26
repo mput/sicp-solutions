@@ -73,3 +73,4 @@
   - [Exercise 2.44](./solutions/2_44.rkt) *Язык описания изображений*
   - [Exercise 2.45](./solutions/2_45.rkt)
   - [Exercise 2.46](./solutions/2_46.rkt) [(test)](./tests/2_46.test.rkt)
+  - [Exercise 2.47](./solutions/2_47.rkt) [(test)](./tests/2_47.test.rkt)
