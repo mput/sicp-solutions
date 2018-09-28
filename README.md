@@ -78,3 +78,4 @@
   - [Exercise 2.49](./solutions/2_49.rkt)
   - [Exercise 2.50](./solutions/2_50.rkt)
   - [Exercise 2.54](./solutions/2_54.rkt) [(test)](./tests/2_54.test.rkt)
+  - [Exercise 2.56](./solutions/2_56.rkt) [(test)](./tests/2_56.test.rkt) *Взятие производной*

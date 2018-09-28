@@ -17,7 +17,7 @@
   (+ (* a x) (* b y)))
 
 (define (linear-combination a b x y)
-  (add (mul a x) (mul b y))) 
+  (add (mul a x) (mul b y)))
 
 
 ;;;SECTION 2.1.1
@@ -45,7 +45,7 @@
      (* (numer y) (denom x))))
 
 ;: (define x (cons 1 2))
-;: 
+;:
 ;: (car x)
 ;: (cdr x)
 
@@ -74,11 +74,11 @@
 
 
 ;: (define one-half (make-rat 1 2))
-;: 
+;:
 ;: (print-rat one-half)
-;: 
+;:
 ;: (define one-third (make-rat 1 3))
-;: 
+;:
 ;: (print-rat (add-rat one-half one-third))
 ;: (print-rat (mul-rat one-half one-third))
 ;: (print-rat (add-rat one-third one-third))
@@ -166,7 +166,7 @@
                    (max p1 p2 p3 p4))))
 
 (define (div-interval x y)
-  (mul-interval x 
+  (mul-interval x
                 (make-interval (/ 1.0 (upper-bound y))
                                (/ 1.0 (lower-bound y)))))
 
@@ -193,7 +193,7 @@
                 (add-interval r1 r2)))
 
 (define (par2 r1 r2)
-  (let ((one (make-interval 1 1))) 
+  (let ((one (make-interval 1 1)))
     (div-interval one
                   (add-interval (div-interval one r1)
                                 (div-interval one r2)))))
@@ -207,7 +207,7 @@
 
 
 ;: (define one-through-four (list 1 2 3 4))
-;: 
+;:
 ;: one-through-four
 ;: (car one-through-four)
 ;: (cdr one-through-four)
@@ -319,7 +319,7 @@
   (define (iter things answer)
     (if (null? things)
         answer
-        (iter (cdr things) 
+        (iter (cdr things)
               (cons (square (car things))
                     answer))))
   (iter items nil))
@@ -343,11 +343,11 @@
 
 ;;;SECTION 2.2.2
 ;: (cons (list 1 2) (list 3 4))
-;: 
+;:
 ;: (define x (cons (list 1 2) (list 3 4)))
 ;: (length x)
 ;: (count-leaves x)
-;: 
+;:
 ;: (list x x)
 ;: (length (list x x))
 ;: (count-leaves (list x x))
@@ -369,7 +369,7 @@
 ;; EXERCISE 2.26
 ;: (define x (list 1 2 3))
 ;: (define y (list 4 5 6))
-;: 
+;:
 ;: (append x y)
 ;: (cons x y)
 ;: (list x y)
@@ -640,18 +640,18 @@
 ;; EXERCISE 2.43
 ;; Louis's version of queens
 (define (queens board-size)
-  (define (queen-cols k)  
+  (define (queen-cols k)
     (if (= k 0)
         (list empty-board)
         (filter
          (lambda (positions) (safe? k positions))
-	 ;; next expression changed
+   ;; next expression changed
          (flatmap
-	  (lambda (new-row)
-	    (map (lambda (rest-of-queens)
-		   (adjoin-position new-row k rest-of-queens))
-		 (queen-cols (- k 1))))
-	  (enumerate-interval 1 board-size)))))
+          (lambda (new-row)
+             (map (lambda (rest-of-queens)
+                   (adjoin-position new-row k rest-of-queens))
+              (queen-cols (- k 1))))
+          (enumerate-interval 1 board-size)))))
   (queen-cols board-size))
 
 ;;;SECTION 2.2.4
@@ -848,17 +848,17 @@
 
 ;; EXERCISE 2.53
 ;: (list 'a 'b 'c)
-;: 
+;:
 ;: (list (list 'george))
-;: 
+;:
 ;: (cdr '((x1 x2) (y1 y2)))
-;: 
+;:
 ;: (cadr '((x1 x2) (y1 y2)))
-;: 
+;:
 ;: (pair? (car '(a short list)))
-;: 
+;:
 ;: (memq 'red '((red shoes) (blue socks)))
-;: 
+;:
 ;: (memq 'red '(red shoes blue socks))
 
 
@@ -1012,7 +1012,7 @@
   (cond ((null? set) (make-tree x '() '()))
         ((= x (entry set)) set)
         ((< x (entry set))
-         (make-tree (entry set) 
+         (make-tree (entry set)
                     (adjoin-set x (left-branch set))
                     (right-branch set)))
         ((> x (entry set))
@@ -1201,7 +1201,7 @@
 
 (define (make-from-real-imag x y) (cons x y))
 
-(define (make-from-mag-ang r a) 
+(define (make-from-mag-ang r a)
   (cons (* r (cos a)) (* r (sin a))))
 
 
@@ -1217,7 +1217,7 @@
 
 (define (angle z) (cdr z))
 
-(define (make-from-real-imag x y) 
+(define (make-from-real-imag x y)
   (cons (sqrt (+ (square x) (square y)))
         (atan y x)))
 
@@ -1263,7 +1263,7 @@
 (define (make-from-real-imag-rectangular x y)
   (attach-tag 'rectangular (cons x y)))
 
-(define (make-from-mag-ang-rectangular r a) 
+(define (make-from-mag-ang-rectangular r a)
   (attach-tag 'rectangular
               (cons (* r (cos a)) (* r (sin a)))))
 
@@ -1279,7 +1279,7 @@
 
 (define (angle-polar z) (cdr z))
 
-(define (make-from-real-imag-polar x y) 
+(define (make-from-real-imag-polar x y)
   (attach-tag 'polar
                (cons (sqrt (+ (square x) (square y)))
                      (atan y x))))
@@ -1291,7 +1291,7 @@
 ;; Generic selectors
 
 (define (real-part z)
-  (cond ((rectangular? z) 
+  (cond ((rectangular? z)
          (real-part-rectangular (contents z)))
         ((polar? z)
          (real-part-polar (contents z)))
@@ -1345,7 +1345,7 @@
              (square (imag-part z)))))
   (define (angle z)
     (atan (imag-part z) (real-part z)))
-  (define (make-from-mag-ang r a) 
+  (define (make-from-mag-ang r a)
     (cons (* r (cos a)) (* r (sin a))))
 
   ;; interface to the rest of the system
@@ -1369,7 +1369,7 @@
     (* (magnitude z) (cos (angle z))))
   (define (imag-part z)
     (* (magnitude z) (sin (angle z))))
-  (define (make-from-real-imag x y) 
+  (define (make-from-real-imag x y)
     (cons (sqrt (+ (square x) (square y)))
           (atan y x)))
 
@@ -1581,7 +1581,7 @@
 ;: (define (add-complex-to-schemenum z x)
 ;:   (make-from-real-imag (+ (real-part z) x)
 ;:                        (imag-part z)))
-;: 
+;:
 ;: (put 'add '(complex scheme-number)
 ;:      (lambda (z x) (tag (add-complex-to-schemenum z x))))
 
@@ -1670,9 +1670,9 @@
 
   ;; interface to rest of the system
   (define (tag p) (attach-tag 'polynomial p))
-  (put 'add '(polynomial polynomial) 
+  (put 'add '(polynomial polynomial)
        (lambda (p1 p2) (tag (add-poly p1 p2))))
-  (put 'mul '(polynomial polynomial) 
+  (put 'mul '(polynomial polynomial)
        (lambda (p1 p2) (tag (mul-poly p1 p2))))
 
   (put 'make 'polynomial
@@ -1747,10 +1747,10 @@
             (let ((new-c (div (coeff t1) (coeff t2)))
                   (new-o (- (order t1) (order t2))))
               (let ((rest-of-result
-                     ??FILL-THIS-IN?? ;compute rest of result recursively
-                     ))
-                ??FILL-THIS-IN?? ;form complete result
-                ))))))
+                     ??FILL-THIS-IN??)) ;compute rest of result recursively
+
+                ??FILL-THIS-IN??)))))) ;form complete result
+
 
 
 ;; EXERCISE 2.93
