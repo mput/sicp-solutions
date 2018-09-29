@@ -2,6 +2,10 @@
 #| Solution for exercise 2_56. |#
 
 (provide deriv)
+(provide make-sum sum? addend augend)
+(provide make-product product? multiplier multiplicand)
+(provide make-exponent exponention? base exponent)
+(provide =number? variable? same-variable?)
 
 (define (deriv exp var)
   (cond ((number? exp) 0)

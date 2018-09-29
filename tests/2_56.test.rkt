@@ -13,7 +13,9 @@
       (check-equal? (deriv '(+ x 3) 'x)
                     1)
       (check-equal? (deriv '(* x y) 'x)
-                    'y))
+                    'y)
+      (check-equal? (deriv '(* (* x y) (+ x 3)) 'x)
+                    '(+ (* x y) (* y (+ x 3)))))
     (test-case
       "Exponent deriv"
       (check-equal? (deriv '(** x 2) 'x)

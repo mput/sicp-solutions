@@ -79,3 +79,4 @@
   - [Exercise 2.50](./solutions/2_50.rkt)
   - [Exercise 2.54](./solutions/2_54.rkt) [(test)](./tests/2_54.test.rkt)
   - [Exercise 2.56](./solutions/2_56.rkt) [(test)](./tests/2_56.test.rkt) *Взятие производной*
+  - [Exercise 2.57](./solutions/2_57.rkt) [(test)](./tests/2_57.test.rkt) *Взятие производных от сумм и произведений с любым колличества термов*
