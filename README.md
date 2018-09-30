@@ -83,3 +83,5 @@
   - [Exercise 2.58](./solutions/2_58.rkt) [(test)](./tests/2_58.test.rkt)
   - [Exercise 2.59](./solutions/2_59.rkt) [(test)](./tests/2_59.test.rkt) *Множества представленные в виде неупорядоченных списков*
   - [Exercise 2.60](./solutions/2_60.rkt) [(test)](./tests/2_60.test.rkt)
+  - [Exercise 2.61](./solutions/2_61.rkt) [(test)](./tests/2_61.test.rkt) *Множества представленные в виде упорядоченных списков*
+
