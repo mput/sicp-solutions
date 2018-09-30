@@ -82,3 +82,4 @@
   - [Exercise 2.57](./solutions/2_57.rkt) [(test)](./tests/2_57.test.rkt) *Взятие производных от сумм и произведений с любым колличества термов*
   - [Exercise 2.58](./solutions/2_58.rkt) [(test)](./tests/2_58.test.rkt)
   - [Exercise 2.59](./solutions/2_59.rkt) [(test)](./tests/2_59.test.rkt) *Множества представленные в виде неупорядоченных списков*
+  - [Exercise 2.60](./solutions/2_60.rkt) [(test)](./tests/2_60.test.rkt)
