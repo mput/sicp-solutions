@@ -84,7 +84,7 @@
   - [Exercise 2.59](./solutions/2_59.rkt) [(test)](./tests/2_59.test.rkt) *Множества представленные в виде неупорядоченных списков*
   - [Exercise 2.60](./solutions/2_60.rkt) [(test)](./tests/2_60.test.rkt)
   - [Exercise 2.61](./solutions/2_61.rkt) [(test)](./tests/2_61.test.rkt) *Множества представленные в виде упорядоченных списков*
-
   - [Exercise 2.62](./solutions/2_62.rkt) [(test)](./tests/2_62.test.rkt) *O(n) union-set для упорядоченного представления множеств*
   - [Exercise 2.63](./solutions/2_63.rkt) [(test)](./tests/2_63.test.rkt)
   - [Exercise 2.64](./solutions/2_64.rkt) [(test)](./tests/2_64.test.rkt)
+  - [Exercise 2.65](./solutions/2_65.rkt) [(test)](./tests/2_65.test.rkt)

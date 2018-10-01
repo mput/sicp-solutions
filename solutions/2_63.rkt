@@ -2,7 +2,7 @@
 #| Solution for exercise 2_63. |#
 
 (require rackunit "../solutions/utils.rkt")
-(provide make-tree entry left-branch right-branch adjoin-set tree->list tree->list2)
+(provide make-tree entry left-branch right-branch element-of-set? adjoin-set tree->list tree->list2)
 
 (define (make-tree entry left right) (list entry left right))
 
@@ -11,6 +11,14 @@
 (define (left-branch tree) (cadr tree))
 
 (define (right-branch tree) (caddr tree))
+
+(define (element-of-set? x set)
+  (cond ((null? set) false)
+        ((= x (entry set)) true)
+        ((< x (entry set))
+         (element-of-set? x (left-branch set)))
+        ((> x (entry set))
+         (element-of-set? x (right-branch set)))))
 
 (define (adjoin-set x set)
   (cond ((null? set)
