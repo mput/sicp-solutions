@@ -87,3 +87,4 @@
 
   - [Exercise 2.62](./solutions/2_62.rkt) [(test)](./tests/2_62.test.rkt) *O(n) union-set для упорядоченного представления множеств*
   - [Exercise 2.63](./solutions/2_63.rkt) [(test)](./tests/2_63.test.rkt)
+  - [Exercise 2.64](./solutions/2_64.rkt) [(test)](./tests/2_64.test.rkt)
