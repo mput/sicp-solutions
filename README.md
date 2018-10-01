@@ -86,3 +86,4 @@
   - [Exercise 2.61](./solutions/2_61.rkt) [(test)](./tests/2_61.test.rkt) *Множества представленные в виде упорядоченных списков*
 
   - [Exercise 2.62](./solutions/2_62.rkt) [(test)](./tests/2_62.test.rkt) *O(n) union-set для упорядоченного представления множеств*
+  - [Exercise 2.63](./solutions/2_63.rkt) [(test)](./tests/2_63.test.rkt)
