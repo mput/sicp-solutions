@@ -77,6 +77,7 @@
   - [Exercise 2.48](./solutions/2_48.rkt) [(test)](./tests/2_48.test.rkt)
   - [Exercise 2.49](./solutions/2_49.rkt)
   - [Exercise 2.50](./solutions/2_50.rkt)
+### 2.3. Символьные данные
   - [Exercise 2.54](./solutions/2_54.rkt) [(test)](./tests/2_54.test.rkt)
   - [Exercise 2.56](./solutions/2_56.rkt) [(test)](./tests/2_56.test.rkt) *Взятие производной*
   - [Exercise 2.57](./solutions/2_57.rkt) [(test)](./tests/2_57.test.rkt) *Взятие производных от сумм и произведений с любым колличества термов*
@@ -88,3 +89,4 @@
   - [Exercise 2.63](./solutions/2_63.rkt) [(test)](./tests/2_63.test.rkt)
   - [Exercise 2.64](./solutions/2_64.rkt) [(test)](./tests/2_64.test.rkt)
   - [Exercise 2.65](./solutions/2_65.rkt) [(test)](./tests/2_65.test.rkt)
+  - [Exercise 2.66](./solutions/2_66.rkt) [(test)](./tests/2_66.test.rkt)
