@@ -90,3 +90,4 @@
   - [Exercise 2.64](./solutions/2_64.rkt) [(test)](./tests/2_64.test.rkt)
   - [Exercise 2.65](./solutions/2_65.rkt) [(test)](./tests/2_65.test.rkt)
   - [Exercise 2.66](./solutions/2_66.rkt) [(test)](./tests/2_66.test.rkt)
+  - [Exercise 2.67](./solutions/2_67.rkt) [(test)](./tests/2_67.test.rkt)
