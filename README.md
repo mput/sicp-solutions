@@ -91,3 +91,4 @@
   - [Exercise 2.65](./solutions/2_65.rkt) [(test)](./tests/2_65.test.rkt)
   - [Exercise 2.66](./solutions/2_66.rkt) [(test)](./tests/2_66.test.rkt)
   - [Exercise 2.67](./solutions/2_67.rkt) [(test)](./tests/2_67.test.rkt)
+  - [Exercise 2.68](./solutions/2_68.rkt) [(test)](./tests/2_68.test.rkt) *Деревья Хоффмана*

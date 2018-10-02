@@ -1,7 +1,7 @@
 #lang racket
 #| Solution for exercise 2_67. |#
 
-(provide make-leaf make-code-tree decode adjoin-set make-leaf-set)
+(provide make-leaf make-code-tree decode adjoin-set make-leaf-set leaf? left-branch right-branch symbols)
 
 (define (make-leaf symbol weight)
   (list 'leaf symbol weight))
