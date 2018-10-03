@@ -8,7 +8,6 @@
   (successive-merge (make-leaf-set pairs)))
 
 (define (successive-merge leaf-set)
-  (displayln leaf-set)
   (if (null? (cddr leaf-set))
       leaf-set
       (successive-merge
