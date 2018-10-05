@@ -1,12 +1,12 @@
 #lang racket
 
 (require rackunit  rackunit/text-ui)
-(require (only-in "../solutions/2_72.rkt" deriv))
+(require (only-in "../solutions/2_73.rkt" deriv))
 
 
 (define tests
   (test-suite
-    "Test for exercise 2_57"
+    "Test for exercise 2_73"
     (test-case
       "Sum deriv tests"
       (check-equal? (deriv '(+ x 1) 'x)

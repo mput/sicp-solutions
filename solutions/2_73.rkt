@@ -1,5 +1,5 @@
 #lang racket
-#| Solution for exercise 2_72. |#
+#| Solution for exercise 2_73. |#
 (require (only-in "../solutions/dispatch-table.rkt" put get))
 (require (only-in "../solutions/2_56.rkt" =number? variable? same-variable?))
 
