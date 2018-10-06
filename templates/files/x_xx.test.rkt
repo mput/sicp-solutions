@@ -1,8 +1,7 @@
 #lang racket
 
-(require rackunit/text-ui)
-(require rackunit "custom-checks.rkt")
-(require rackunit "../solutions/{{ exc }}.rkt")
+(require rackunit  rackunit/text-ui)
+(require (only-in "../solutions/{{ exc }}.rkt"))
 
 
 (define tests
@@ -11,7 +10,7 @@
     (check-equal? solutions 1 "")
     (test-case
       "Case here"
-      (check-not-equal? solutions 0 ""))))
+      (check-equal? solutions 0 ""))))
 
 (run-tests tests 'verbose)
 

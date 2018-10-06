@@ -1,7 +1,7 @@
 #lang racket
 #| My frequently used utils |#
 
-(provide square cube aprox-equal-at even? inc average)
+(provide square cube aprox-equal-at even? inc average put get attach-tag)
 
 (define (square arg) (* arg arg))
 (define (cube arg) (* arg arg arg))
@@ -14,3 +14,4 @@
 (define (inc x) (+ x 1))
 
 (define (average a b) (/ (+ a b) 2))
+
