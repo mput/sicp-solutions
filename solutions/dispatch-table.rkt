@@ -52,8 +52,16 @@
 (define put (operation-table 'insert-proc!))
 
 (define (attach-tag tag x) (cons tag x))
-(define (type-tag z) (car z))
-(define (contents z) (cdr z))
+
+(define (type-tag tagged)
+  (if (number? tagged)
+    'scheme-number
+    (car tagged)))
+
+(define (contents tagged)
+  (if (number? tagged)
+    tagged
+    (cdr tagged)))
 
 (define (apply-generic op . args)
   (let ((type-tags (map type-tag args)))

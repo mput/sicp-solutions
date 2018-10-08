@@ -95,3 +95,4 @@
   - [Exercise 2.69](./solutions/2_69.rkt) [(test)](./tests/2_69.test.rkt) *Построение дерева Хоффмана из списка пар (символ - частота)*
   - [Exercise 2.70](./solutions/2_70.rkt)
   - [Exercise 2.72](./solutions/2_72.rkt) [(test)](./tests/2_72.test.rkt)
+  - [Exercise 2.78](./solutions/2_78.rkt) [(test)](./tests/2_78.test.rkt)
