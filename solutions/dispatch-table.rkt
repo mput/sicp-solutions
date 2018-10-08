@@ -1,6 +1,6 @@
 #lang racket
 
-(provide put get attach-tag)
+(provide put get attach-tag type-tag contents apply-generic)
 
 ;;;-----------
 ;;;from section 3.3.3 for section 2.4.3
@@ -51,4 +51,16 @@
 (define get (operation-table 'lookup-proc))
 (define put (operation-table 'insert-proc!))
 
-(define (attach-tag tag x) (mcons tag x))
+(define (attach-tag tag x) (cons tag x))
+(define (type-tag z) (car z))
+(define (contents z) (cdr z))
+
+(define (apply-generic op . args)
+  (let ((type-tags (map type-tag args)))
+    (let ((proc (get op type-tags)))
+      (if proc
+          (apply proc (map contents args))
+          (error
+            "No method for these types -- APPLY-GENERIC"
+            (list op type-tags))))))
+
