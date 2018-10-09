@@ -4,6 +4,7 @@
 (require "./custom-checks.rkt")
 (require (only-in "../solutions/2_78.rkt" add sub mul div make-rational make-complex-from-real-imag make-complex-from-mag-ang numer denom))
 (require (only-in "../solutions/dispatch-table.rkt" apply-generic))
+(require (only-in "./complex-number-package.rkt" real-part imag-part))
 
 
 (define tests
