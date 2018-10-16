@@ -1,9 +1,20 @@
 #lang racket
 
 (require rackunit  rackunit/text-ui)
-(require (only-in "../solutions/2_78.rkt" add sub mul div make-rational make-complex-from-real-imag make-complex-from-mag-ang numer denom))
-(require (only-in "../solutions/2_80.rkt" =zero?))
+(require (only-in "../solutions/2_78.rkt" install-scheme-number-package install-rational-package install-complex-package))
+(require (only-in "../solutions/2_80.rkt" install-=zero?-package))
+(require (only-in "../solutions/dispatch-table.rkt" put get apply-generic))
 
+(install-scheme-number-package)
+(install-rational-package)
+(install-complex-package)
+(install-=zero?-package)
+
+(define (=zero? x) (apply-generic '=zero? x))
+(define (make-rational n d)
+  ((get 'make 'rational) n d))
+(define (make-complex-from-real-imag x y)
+  ((get 'make-from-real-imag 'complex) x y))
 
 (define tests
   (test-suite

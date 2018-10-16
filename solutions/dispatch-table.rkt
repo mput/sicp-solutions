@@ -1,6 +1,6 @@
 #lang racket
 
-(provide put get attach-tag type-tag contents apply-generic)
+(provide put get attach-tag type-tag contents apply-generic put-coercion get-coercion)
 
 ;;;-----------
 ;;;from section 3.3.3 for section 2.4.3
@@ -50,6 +50,10 @@
 (define operation-table (make-table))
 (define get (operation-table 'lookup-proc))
 (define put (operation-table 'insert-proc!))
+
+(define operation-table-coercion (make-table))
+(define get-coercion (operation-table-coercion 'lookup-proc))
+(define put-coercion (operation-table-coercion 'insert-proc!))
 
 (define (attach-tag tag x) (cons tag x))
 

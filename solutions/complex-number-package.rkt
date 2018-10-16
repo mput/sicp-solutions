@@ -3,7 +3,8 @@
 (require (only-in "dispatch-table.rkt" put get attach-tag type-tag contents apply-generic))
 (require (only-in "utils.rkt" square))
 
-(provide real-part imag-part magnitude angle)
+#| (provide real-part imag-part magnitude angle) |#
+(provide install-rectangular-package install-polar-package)
 
 (define (install-rectangular-package)
   ;; internal procedures
@@ -54,22 +55,3 @@
   (put 'make-from-mag-ang 'polar
        (lambda (r a) (tag (make-from-mag-ang r a))))
   'install-polar-package-done)
-
-;; Generic selectors
-
-(install-rectangular-package)
-(install-polar-package)
-
-(define (real-part z) (apply-generic 'real-part z))
-(define (imag-part z) (apply-generic 'imag-part z))
-(define (magnitude z) (apply-generic 'magnitude z))
-(define (angle z) (apply-generic 'angle z))
-
-
-;; Constructors for complex numbers
-
-(define (make-from-real-imag x y)
-  ((get 'make-from-real-imag 'rectangular) x y))
-
-(define (make-from-mag-ang r a)
-  ((get 'make-from-mag-ang 'polar) r a))

@@ -2,14 +2,9 @@
 #| Solution for exercise 2_78. |#
 
 (require (only-in "../solutions/dispatch-table.rkt" put get attach-tag type-tag contents apply-generic))
-(require (only-in "./complex-number-package.rkt" real-part imag-part magnitude angle))
+(require (only-in "./complex-number-package.rkt" install-rectangular-package install-polar-package))
+(provide install-scheme-number-package install-rational-package install-complex-package)
 
-(provide add sub mul div make-rational make-complex-from-real-imag make-complex-from-mag-ang numer denom)
-
-(define (add x y) (apply-generic 'add x y))
-(define (sub x y) (apply-generic 'sub x y))
-(define (mul x y) (apply-generic 'mul x y))
-(define (div x y) (apply-generic 'div x y))
 
 (define (install-scheme-number-package)
   (put 'add '(scheme-number scheme-number)
@@ -21,6 +16,10 @@
   (put 'div '(scheme-number scheme-number)
        (lambda (x y) (/ x y)))
   'install-scheme-number-package-done)
+
+;; Generic selectors
+
+
 
 
 (define (install-rational-package)
@@ -62,18 +61,19 @@
        (lambda (n d) (tag (make-rat n d))))
   'install-rational-package-done)
 
-(define (make-rational n d)
-  ((get 'make 'rational) n d))
-
-(define (numer rat) (apply-generic 'numer rat))
-(define (denom rat) (apply-generic 'denom rat))
 
 (define (install-complex-package)
+  (install-polar-package)
+  (install-rectangular-package)
   ;; imported procedures from rectangular and polar packages
   (define (make-from-real-imag x y)
     ((get 'make-from-real-imag 'rectangular) x y))
   (define (make-from-mag-ang r a)
     ((get 'make-from-mag-ang 'polar) r a))
+  (define (real-part z) (apply-generic 'real-part z))
+  (define (imag-part z) (apply-generic 'imag-part z))
+  (define (magnitude z) (apply-generic 'magnitude z))
+  (define (angle z) (apply-generic 'angle z))
   ;; internal procedures
   (define (add-complex z1 z2)
     (make-from-real-imag (+ (real-part z1) (real-part z2))
@@ -108,15 +108,3 @@
   (put 'magnitude '(complex) magnitude)
   (put 'angle '(complex) angle)
   'installing-comlex-package-done)
-
-(define (make-complex-from-real-imag x y)
-  ((get 'make-from-real-imag 'complex) x y))
-
-(define (make-complex-from-mag-ang r a)
-  ((get 'make-from-mag-ang 'complex) r a))
-
-(install-scheme-number-package)
-(install-rational-package)
-(install-complex-package)
-
-

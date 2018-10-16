@@ -2,8 +2,28 @@
 
 (require rackunit  rackunit/text-ui)
 (require "./custom-checks.rkt")
-(require (only-in "../solutions/2_78.rkt" add sub mul div make-rational make-complex-from-real-imag make-complex-from-mag-ang numer denom))
-(require (only-in "../solutions/dispatch-table.rkt" apply-generic))
+(require (only-in "../solutions/2_78.rkt" install-scheme-number-package install-rational-package install-complex-package))
+(require (only-in "../solutions/dispatch-table.rkt" apply-generic get put))
+
+
+(install-scheme-number-package)
+(install-rational-package)
+(install-complex-package)
+
+(define (add x y) (apply-generic 'add x y))
+(define (sub x y) (apply-generic 'sub x y))
+(define (mul x y) (apply-generic 'mul x y))
+(define (div x y) (apply-generic 'div x y))
+
+(define (make-rational n d)
+  ((get 'make 'rational) n d))
+(define (numer rat) (apply-generic 'numer rat))
+(define (denom rat) (apply-generic 'denom rat))
+
+(define (make-complex-from-real-imag x y)
+  ((get 'make-from-real-imag 'complex) x y))
+(define (make-complex-from-mag-ang r a)
+  ((get 'make-from-mag-ang 'complex) r a))
 
 
 (define tests
