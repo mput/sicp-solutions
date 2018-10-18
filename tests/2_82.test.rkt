@@ -4,34 +4,34 @@
 (require (only-in "../solutions/2_78.rkt" install-scheme-number-package install-rational-package install-complex-package))
 (require (only-in "../solutions/dispatch-table.rkt" get put))
 (require (only-in "../solutions/2_79.rkt" install-equ?-package))
-(require (only-in "../solutions/2_81.rkt" install-coercion-package apply-generic-coercion))
+(require (only-in "../solutions/2_81.rkt" install-coercion-package))
+(require (only-in "../solutions/2_82.rkt" apply-generic-coercion install-equ?-with-three-args-package))
 
 (install-scheme-number-package)
 (install-rational-package)
 (install-complex-package)
 (install-equ?-package)
 (install-coercion-package)
+(install-equ?-with-three-args-package)
 
 (define (make-complex-from-real-imag x y)
   ((get 'make-from-real-imag 'complex) x y))
 (define (make-complex-from-mag-ang r a)
   ((get 'make-from-mag-ang 'complex) r a))
 
-(define (add arg1 arg2) (apply-generic-coercion 'add arg1 arg2))
-(define (equ? x y) (apply-generic-coercion 'equ? x y))
-(define (exp x y) (apply-generic-coercion 'expt x y))
+(define (equ? x y z) (apply-generic-coercion 'equ? x y z))
 
 (define tests
   (test-suite
-    "Test for exercise 2_81"
+    "Test for exercise 2_82"
     (test-case
-      "Schema numbers"
-      (check-equal? (add 5 6) 11)
-      (check-exn exn:fail? (lambda () (exp 3 2))))
-    (test-case
-      "Test comlex"
-      (define compl-num (make-complex-from-real-imag 3 2))
-      (equ? (add compl-num 3) (make-complex-from-real-imag 6 2)))))
+      "Test coersions two scheme-number->complex"
+      (define compl-num (make-complex-from-real-imag 3 0))
+      (check-true (equ? 3 3 3))
+      (check-true (equ? compl-num compl-num compl-num))
+      (check-true (equ? compl-num 3 3))
+      (check-true (equ? 3 compl-num 3))
+      (check-true (equ? 3 compl-num compl-num)))))
 
 (run-tests tests 'verbose)
 
