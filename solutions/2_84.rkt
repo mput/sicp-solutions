@@ -10,11 +10,6 @@
       (proc n)
       false)))
 
-(define (every? items)
-  (cond ((null? items) true)
-        ((not (car items)) false)
-        (else (every? (cdr items)))))
-
 (define (get-types args) (map type-tag args))
 (define (get-contents args) (map contents args))
 

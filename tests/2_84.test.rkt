@@ -40,10 +40,12 @@
   ((get 'make 'rational) n d))
 
 (define (equ? x y z) (apply-generic-coercion 'equ? x y z))
+(define (add x y) (apply-generic-coercion 'add x y))
 
 (define compl-num (make-complex-from-real-imag 3 0))
 (define compl-num2 (make-complex-from-real-imag 4 0))
 (define rat-num (make-rational 3 1))
+(define rat-num2 (make-rational 3 2))
 
 (define tests
   (test-suite
@@ -61,7 +63,10 @@
       (check-false (equ? compl-num compl-num2 compl-num)))
     (test-case
       "With three different types"
-      (check-true (equ? rat-num compl-num 3)))))
+      (check-true (equ? rat-num compl-num 3)))
+    (test-case
+      "Try add args"
+      (check-equal? (add rat-num2 2) (make-rational 7 2)))))
 
 (run-tests tests 'verbose)
 
