@@ -100,3 +100,4 @@
   - [Exercise 2.80](./solutions/2_80.rkt) [(test)](./tests/2_80.test.rkt)
   - [Exercise 2.81](./solutions/2_81.rkt) [(test)](./tests/2_81.test.rkt)
   - [Exercise 2.82](./solutions/2_82.rkt) [(test)](./tests/2_82.test.rkt)
+  - [Exercise 2.83](./solutions/2_83.rkt) [(test)](./tests/2_83.test.rkt)
