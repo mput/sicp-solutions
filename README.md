@@ -77,7 +77,7 @@
   - [Exercise 2.48](./solutions/2_48.rkt) [(test)](./tests/2_48.test.rkt)
   - [Exercise 2.49](./solutions/2_49.rkt)
   - [Exercise 2.50](./solutions/2_50.rkt)
-### 2.3. Символьные данные
+### 2.3. Символьные данные.
   - [Exercise 2.54](./solutions/2_54.rkt) [(test)](./tests/2_54.test.rkt)
   - [Exercise 2.56](./solutions/2_56.rkt) [(test)](./tests/2_56.test.rkt) *Взятие производной*
   - [Exercise 2.57](./solutions/2_57.rkt) [(test)](./tests/2_57.test.rkt) *Взятие производных от сумм и произведений с любым колличества термов*
@@ -95,6 +95,8 @@
   - [Exercise 2.69](./solutions/2_69.rkt) [(test)](./tests/2_69.test.rkt) *Построение дерева Хоффмана из списка пар (символ - частота)*
   - [Exercise 2.70](./solutions/2_70.rkt)
   - [Exercise 2.72](./solutions/2_72.rkt) [(test)](./tests/2_72.test.rkt)
+### 2.4. Множественные представления для абстрактных данных.
+### 2.5. Системы с обощенными операциями.
   - [Exercise 2.78](./solutions/2_78.rkt) [(test)](./tests/2_78.test.rkt) *Обобщеные арефметические операции*
   - [Exercise 2.79](./solutions/2_79.rkt) [(test)](./tests/2_79.test.rkt)
   - [Exercise 2.80](./solutions/2_80.rkt) [(test)](./tests/2_80.test.rkt)
@@ -103,3 +105,5 @@
   - [Exercise 2.83](./solutions/2_83.rkt) [(test)](./tests/2_83.test.rkt)
   - [Exercise 2.84](./solutions/2_84.rkt) [(test)](./tests/2_84.test.rkt)
   - [Exercise 2.87](./solutions/2_87.rkt) [(test)](./tests/2_87.test.rkt)
+## 3. Глава 1.  Модульность, объекты и состояние.
+### 3.1. Присваивание и внутреннее состояние объектов.
