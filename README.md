@@ -109,3 +109,4 @@
 ### 3.1. Присваивание и внутреннее состояние объектов.
   - [Exercise 3.01](./solutions/3_01.rkt) [(test)](./tests/3_01.test.rkt)
   - [Exercise 3.02](./solutions/3_02.rkt) [(test)](./tests/3_02.test.rkt)
+  - [Exercise 3.03](./solutions/3_03.rkt) [(test)](./tests/3_03.test.rkt)
