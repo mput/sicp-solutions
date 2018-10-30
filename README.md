@@ -112,3 +112,4 @@
   - [Exercise 3.03](./solutions/3_03.rkt) [(test)](./tests/3_03.test.rkt)
   - [Exercise 3.04](./solutions/3_04.rkt) [(test)](./tests/3_04.test.rkt)
   - [Exercise 3.05](./solutions/3_05.rkt) [(test)](./tests/3_05.test.rkt)
+  - [Exercise 3.07](./solutions/3_07.rkt) [(test)](./tests/3_07.test.rkt)
