@@ -117,3 +117,4 @@
   - [Exercise 3.14](./solutions/3_14.rkt) [(test)](./tests/3_14.test.rkt)
   - [Exercise 3.16](./solutions/3_16.rkt) [(test)](./tests/3_16.test.rkt)
   - [Exercise 3.17](./solutions/3_17.rkt) [(test)](./tests/3_17.test.rkt)
+  - [Exercise 3.18](./solutions/3_18.rkt) [(test)](./tests/3_18.test.rkt)
