@@ -114,7 +114,10 @@
   - [Exercise 3.05](./solutions/3_05.rkt) [(test)](./tests/3_05.test.rkt)
   - [Exercise 3.07](./solutions/3_07.rkt) [(test)](./tests/3_07.test.rkt)
   - [Exercise 3.08](./solutions/3_08.rkt) [(test)](./tests/3_08.test.rkt)
+### 3.2. Модель вычислений с окружениями.
+### 3.3. Моделирование при помощи изменяемых данных.
   - [Exercise 3.14](./solutions/3_14.rkt) [(test)](./tests/3_14.test.rkt)
   - [Exercise 3.16](./solutions/3_16.rkt) [(test)](./tests/3_16.test.rkt)
-  - [Exercise 3.17](./solutions/3_17.rkt) [(test)](./tests/3_17.test.rkt)
-  - [Exercise 3.18](./solutions/3_18.rkt) [(test)](./tests/3_18.test.rkt)
+  - [Exercise 3.17](./solutions/3_17.rkt) [(test)](./tests/3_17.test.rkt) *Подсчет пар в структуре*
+  - [Exercise 3.18](./solutions/3_18.rkt) [(test)](./tests/3_18.test.rkt) *Поиск цикла в списке*
+  - [Exercise 3.19](./solutions/3_19.rkt) [(test)](./tests/3_19.test.rkt) *Поски цикла в списке по алгоритму "кролика и черепахи"*
