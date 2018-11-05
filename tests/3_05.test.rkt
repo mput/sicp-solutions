@@ -8,7 +8,7 @@
 (define tests
       (test-suite
               "Test for exercise 3_05"
-              (check-close? (estimate-unit-disk-area 100000.) pi 0.01)))
+              (check-close? (estimate-unit-disk-area 100000.) pi 0.1)))
 
 (run-tests tests 'verbose)
 

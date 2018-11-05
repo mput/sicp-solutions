@@ -121,3 +121,4 @@
   - [Exercise 3.17](./solutions/3_17.rkt) [(test)](./tests/3_17.test.rkt) *Подсчет пар в структуре*
   - [Exercise 3.18](./solutions/3_18.rkt) [(test)](./tests/3_18.test.rkt) *Поиск цикла в списке*
   - [Exercise 3.19](./solutions/3_19.rkt) [(test)](./tests/3_19.test.rkt) *Поски цикла в списке по алгоритму "кролика и черепахи"*
+  - [Exercise 3.21](./solutions/3_21.rkt) [(test)](./tests/3_21.test.rkt)
