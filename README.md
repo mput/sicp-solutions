@@ -123,3 +123,4 @@
   - [Exercise 3.19](./solutions/3_19.rkt) [(test)](./tests/3_19.test.rkt) *Поски цикла в списке по алгоритму "кролика и черепахи"*
   - [Exercise 3.21](./solutions/3_21.rkt) [(test)](./tests/3_21.test.rkt)
   - [Exercise 3.22](./solutions/3_22.rkt) [(test)](./tests/3_22.test.rkt) *Реализация очередей*
+  - [Exercise 3.23](./solutions/3_23.rkt) [(test)](./tests/3_23.test.rkt) *Реализация двусторонней очереди*
