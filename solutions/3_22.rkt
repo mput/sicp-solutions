@@ -1,5 +1,5 @@
 #lang sicp
-#| Solution for exercise 3_21. |#
+#| Solution for exercise 3_22. |#
 
 (#%provide make-queue front-queue insert-queue! delete-queue! empty-queue?)
 
