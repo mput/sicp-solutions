@@ -125,3 +125,4 @@
   - [Exercise 3.22](./solutions/3_22.rkt) [(test)](./tests/3_22.test.rkt) *Реализация очередей*
   - [Exercise 3.23](./solutions/3_23.rkt) [(test)](./tests/3_23.test.rkt) *Реализация двусторонней очереди*
   - [Exercise 3.24](./solutions/3_24.rkt) [(test)](./tests/3_24.test.rkt)
+  - [Exercise 3.25](./solutions/3_25.rkt) [(test)](./tests/3_25.test.rkt)
