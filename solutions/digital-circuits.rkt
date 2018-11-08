@@ -2,7 +2,10 @@
 #| A Simulator for Digital Circuits |#
 
 (#%require "../solutions/3_21.rkt")
-(#%provide inverter and-gate or-gate)
+(#%provide inverter and-gate or-gate
+           make-wire probe
+           set-signal! get-signal
+           propogate)
 
 ;; basic elements
 
@@ -63,13 +66,13 @@
 
 (define (probe name wire)
   (add-action! wire
-               (lambda ()
-                 (newline)
-                 (display name)
-                 (display " ")
-                 (display (current-time the-agenda))
-                 (display " New-value = ")
-                 (display (get-signal wire)))))
+                (lambda ()
+                  (display name)
+                  (display " ")
+                  (display (current-time the-agenda))
+                  (display " New-value = ")
+                  (display (get-signal wire))
+                  (newline))))
 
 ;; wire representation
 
@@ -80,9 +83,10 @@
         (begin
           (set! signal-value new-value)
           (call-each action-procedures))
-        'done))
+        'done-setting-signal))
     (define (accept-action-procedure! proc)
-      (set! action-procedures (cons proc action-procedures)))
+      (set! action-procedures (cons proc action-procedures))
+      (proc))
     (define (dispatch m)
       (cond
         ((eq? m 'get-signal) signal-value)
@@ -93,7 +97,7 @@
 
 (define (call-each procs)
   (if (null? procs)
-    'done
+    'done-calling-each-proc
     (begin
       ((car procs))
       (call-each (cdr procs)))))
@@ -105,7 +109,7 @@
   ((wire 'set-signal!) signal))
 
 (define (add-action! wire action)
-  (wire 'add-action!) action)
+  ((wire 'add-action!) action))
 
 ;; agenda
 
@@ -118,7 +122,7 @@
 (define (segment-queue s)
   (cdr s))
 
-(define (make-agenda) (list 0))
+(define (make-agenda) (list 1))
 
 (define (current-time agenda) (car agenda))
 
@@ -145,23 +149,23 @@
       (insert-queue! q action)
       (make-time-segment time q)))
   (define (add-to-segments! segments)
-    (if (= (segment-time (car segments) time))
+    (if (= (segment-time (car segments)) time)
       (insert-queue! (segment-queue (car segments))
                      action)
       (let ((rest (cdr segments)))
         (if (belongs-before? rest)
           (set-cdr! segments
                     (cons (make-new-time-segment time action)
-                          rest)))
-        (add-to-segments! rest))))
+                          rest))
+          (add-to-segments! rest)))))
 
   (let ((segments (segments agenda)))
     (if (belongs-before? segments)
       (set-segments!
         agenda
         (cons (make-new-time-segment time action)
-              segments)))
-    (add-to-segments! segments)))
+              segments))
+      (add-to-segments! segments))))
 
 (define (first-agenda-item agenda)
   (if (empty-agenda? agenda)
@@ -185,7 +189,7 @@
 
 (define (propogate)
   (if (empty-agenda? the-agenda)
-    'done
+    'done-propogete
     (begin
       ((first-agenda-item the-agenda))
       (remove-first-agenda-item! the-agenda)
