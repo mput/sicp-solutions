@@ -166,4 +166,4 @@ make run_tests
   - [Exercise 3.29](./solutions/3_29.rkt)
   - [Part 3.3.4: JS-implementation](./solutions/digital-circuits-js) *Имитация цифровой схемы на JavaScript*
   - [Part 3.3.4: Racket-implementation](./solutions/digital-circuits.rkt) *Имитация цифровой схемы на Racket*
-  - [Exercise 3.33](./solutions/3_33.rkt) [(test)](./tests/3_33.test.rkt)
+  - [Exercise 3.33](./solutions/3_33.rkt) [(test)](./tests/3_33.test.rkt) *Avareger on constraints*
