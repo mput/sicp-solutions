@@ -126,5 +126,7 @@
   - [Exercise 3.23](./solutions/3_23.rkt) [(test)](./tests/3_23.test.rkt) *Реализация двусторонней очереди*
   - [Exercise 3.24](./solutions/3_24.rkt) [(test)](./tests/3_24.test.rkt)
   - [Exercise 3.25](./solutions/3_25.rkt) [(test)](./tests/3_25.test.rkt)
-  - [Exercise 3.28](./solutions/3_28.rkt)
+  - [Exercise 3.28](./solutions/3_28.rkt) *ИЛИ - элемент*
   - [Exercise 3.29](./solutions/3_29.rkt)
+  - [Part 3.3.4: JS-implementation](./solutions/digital-circuits-js) *Имитация цифровой схемы на JavaScript*
+  - [Part 3.3.4: Racket-implementation](./solutions/digital-circuits.rkt) *Имитация цифровой схемы на Racket*

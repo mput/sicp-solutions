@@ -1,0 +1,22 @@
+---
+
+plugins:
+  - jest
+  - babel
+
+env:
+  node: true
+  jest: true
+  jasmine: true
+
+parser: babel-eslint
+
+extends:
+  - 'airbnb-base'
+  - 'plugin:jest/recommended'
+
+rules:
+  no-console: 0
+  no-mixed-spaces-and-tabs: warn
+  # object-curly-newline:
+  #   minProperties: 4
