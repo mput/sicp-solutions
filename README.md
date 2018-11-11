@@ -141,7 +141,7 @@ make run_tests
   - [Exercise 2.83](./solutions/2_83.rkt) [(test)](./tests/2_83.test.rkt)
   - [Exercise 2.84](./solutions/2_84.rkt) [(test)](./tests/2_84.test.rkt)
   - [Exercise 2.87](./solutions/2_87.rkt) [(test)](./tests/2_87.test.rkt)
-## 3. Глава 1.  Модульность, объекты и состояние.
+## Глава 3.  Модульность, объекты и состояние.
 ### 3.1. Присваивание и внутреннее состояние объектов.
   - [Exercise 3.01](./solutions/3_01.rkt) [(test)](./tests/3_01.test.rkt)
   - [Exercise 3.02](./solutions/3_02.rkt) [(test)](./tests/3_02.test.rkt)
