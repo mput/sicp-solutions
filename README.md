@@ -1,6 +1,39 @@
 [![Build Status](https://travis-ci.org/mput/sicp-solutions.svg?branch=master)](https://travis-ci.org/mput/sicp-solutions)
 # Мои решения для задач из *великого и ужасного* [SICP](https://mitpress.mit.edu/sicp/full-text/book/book.html)
 ![](./templates/files/sicp_pict_an1.png)
+## Использование
+Для быстрого создания файлов упражнений на основе шаблонов я использую Ansible:
+```
+make new e=1_29
+```
+Создаст файл `./solutions/1_29.rkt` на основе шаблона упражнений [x_xx.rkt](./templates/files/x_xx.rkt) и файл `./tests/1_29.test.rkt` на основе шаблона теста [x_xx.test.rkt](./templates/files/x_xx.test.rkt)
+Так же будет добавленна строчка вида:
+```
+  - [Exercise 1.29](./solutions/1_29.rkt) [(test)](./tests/1_29.test.rkt)
+
+```
+в конец файла README.md.
+Смотри [templating.yml](./templates/templating.yml) и [Makefile](./Makefile).
+
+Чтобы запустить тест для одного упражнения:
+```
+make test e=3_25
+```
+
+Запустить последоватьельно все тесты:
+```
+make run_tests
+```
+
+Эта же команда используется travis.ci для проверки при каждом коммите.
+Некоторые упражения я выполняю также на JavaScript, для кaждой темы создавая отдельный пакет, например:
+[Part 3.3.4: JS-implementation](./solutions/digital-circuits-js) *Имитация цифровой схемы на JavaScript*
+На данный момент, имлементации на JavaScript не проверяются с помошью travis.
+
+## [Полезные ссылки](./links.md)
+
+
+## Список решений:
 ## Глава 1. Построение абстракций с помощью процедур.
 ### 1.1 Элементы программирования.
   - [Exercise 1.01](./solutions/1_01.rkt)
