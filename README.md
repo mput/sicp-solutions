@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/mput/sicp-solutions.svg?branch=master)](https://travis-ci.org/mput/sicp-solutions)
 # Мои решения для задач из *великого и ужасного* [SICP](https://mitpress.mit.edu/sicp/full-text/book/book.html)
+![](./templates/files/sicp_pict_an1.png)
 ## Глава 1. Построение абстракций с помощью процедур.
 ### 1.1 Элементы программирования.
   - [Exercise 1.01](./solutions/1_01.rkt)
