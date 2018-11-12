@@ -2,6 +2,9 @@
 # Мои решения для задач из *великого и ужасного* [SICP](https://mitpress.mit.edu/sicp/full-text/book/book.html)
 ![](./templates/files/sicp_pict_an1.png)
 
+
+---
+
 # Использование
 
 Для быстрого создания файлов упражнений на основе шаблонов я использую Ansible.
@@ -15,19 +18,21 @@ $ make new e=1_29
 ```
   - [Exercise 1.29](./solutions/1_29.rkt) [(test)](./tests/1_29.test.rkt)
 ```
-
 Смотри [templating.yml](./templates/templating.yml) и [Makefile](./Makefile).
+
+
 
 > Чтобы запустить тест для одного упражнения:
 ```
 $ make test e=3_25
 ```
 
+
+
 > Запустить последовательно все тесты:
 ```
 $ make run_tests
 ```
-
 Эта же команда используется travis.ci для проверки при каждом коммите.
 Некоторые упражнения я выполняю также на JavaScript, для каждой темы создавая отдельный пакет, например:
 [Part 3.3.4: JS-implementation](./solutions/digital-circuits-js)
@@ -44,13 +49,13 @@ $ make run_tests
 
 # Список решений:
 ## Глава 1. Построение абстракций с помощью процедур.
-### 1.1 Элементы программирования.
+- 1.1 Элементы программирования.
   - [Exercise 1.01](./solutions/1_01.rkt)
   - [Exercise 1.02](./solutions/1_02.rkt) [(test)](./tests/1_02.test.rkt)
   - [Exercise 1.03](./solutions/1_03.rkt) [(test)](./tests/1_03.test.rkt)
   - [Exercise 1.07](./solutions/1_07.rkt) [(test)](./tests/1_07.test.rkt) *Нахождение квадратного корня методом Ньютона.*
   - [Exercise 1.08](./solutions/1_08.rkt) [(test)](./tests/1_08.test.rkt)
-### 1.2 Процедуры и порождаемые ими процессы.
+- 1.2 Процедуры и порождаемые ими процессы.
   - [Exercise 1.09](./solutions/1_09.rkt)
   - [Exercise 1.11](./solutions/1_11.rkt) [(test)](./tests/1_11.test.rkt)
   - [Exercise 1.12](./solutions/1_12.rkt) [(test)](./tests/1_12.test.rkt) *Вычисление элемента треугольника Паскаля.*
@@ -63,7 +68,7 @@ $ make run_tests
   - [Exercise 1.23](./solutions/1_23.rkt) [(test)](./tests/1_23.test.rkt) *Простой тест числа на простоту на основе поиска наименьшего делителя. (Вероятностный алгоритм)*
   - [Exercise 1.24](./solutions/1_24.rkt) [(test)](./tests/1_24.test.rkt) *Проверка числа на простоту по методу Ферма (Пропускает числа Кармайкла).*
   - [Exercise 1.28](./solutions/1_28.rkt) [(test)](./tests/1_28.test.rkt) *Надежный тест на простоту (Миллера-Рабина)*
-### 1.3. Формулирование абстракций с помощью процедур высших порядков.
+- 1.3. Формулирование абстракций с помощью процедур высших порядков.
   - [Exercise 1.29](./solutions/1_29.rkt) [(test)](./tests/1_29.test.rkt) *Правило Симпсона - метод численного интегрирования.*
   - [Exercise 1.30](./solutions/1_30.rkt) [(test)](./tests/1_30.test.rkt) *Суммирование последовательности (итеративный процесс).*
   - [Exercise 1.31](./solutions/1_31.rkt) [(test)](./tests/1_31.test.rkt)
@@ -81,7 +86,7 @@ $ make run_tests
   - [Exercise 1.44](./solutions/1_44.rkt) [(test)](./tests/1_44.test.rkt)
   - [Exercise 1.46](./solutions/1_46.rkt) [(test)](./tests/1_46.test.rkt) *Абстракция для стратегии пошагового улучшения.*
 ## Глава 2. Построение абстракций с помощью данных.
-### 2.1. Введение в абстракцию данных.
+- 2.1. Введение в абстракцию данных.
   - [Exercise 2.01](./solutions/2_01.rkt) [(test)](./tests/2_01.test.rkt)
   - [Exercise 2.02](./solutions/2_02.rkt) [(test)](./tests/2_02.test.rkt)
   - [Exercise 2.03](./solutions/2_03.rkt) [(test)](./tests/2_03.test.rkt)
@@ -90,7 +95,7 @@ $ make run_tests
   - [Exercise 2.08](./solutions/2_08.rkt) [(test)](./tests/2_08.test.rkt)
   - [Exercise 2.09](./solutions/2_09.rkt) [(test)](./tests/2_09.test.rkt)
   - [Exercise 2.12](./solutions/2_12.rkt) [(test)](./tests/2_12.test.rkt)
-### 2.2. Иерархарические данные и свойство замыкания.
+- 2.2. Иерархарические данные и свойство замыкания.
   - [Exercise 2.17](./solutions/2_17.rkt) [(test)](./tests/2_17.test.rkt) *Получение последней пары из списка.*
   - [Exercise 2.18](./solutions/2_18.rkt) [(test)](./tests/2_18.test.rkt) *Reverse list.*
   - [Exercise 2.19](./solutions/2_19.rkt) [(test)](./tests/2_19.test.rkt)
@@ -120,7 +125,7 @@ $ make run_tests
   - [Exercise 2.48](./solutions/2_48.rkt) [(test)](./tests/2_48.test.rkt)
   - [Exercise 2.49](./solutions/2_49.rkt)
   - [Exercise 2.50](./solutions/2_50.rkt)
-### 2.3. Символьные данные.
+- 2.3. Символьные данные.
   - [Exercise 2.54](./solutions/2_54.rkt) [(test)](./tests/2_54.test.rkt)
   - [Exercise 2.56](./solutions/2_56.rkt) [(test)](./tests/2_56.test.rkt) *Взятие производной*
   - [Exercise 2.57](./solutions/2_57.rkt) [(test)](./tests/2_57.test.rkt) *Взятие производных от сумм и произведений с любым колличества термов*
@@ -138,8 +143,8 @@ $ make run_tests
   - [Exercise 2.69](./solutions/2_69.rkt) [(test)](./tests/2_69.test.rkt) *Построение дерева Хоффмана из списка пар (символ - частота)*
   - [Exercise 2.70](./solutions/2_70.rkt)
   - [Exercise 2.72](./solutions/2_72.rkt) [(test)](./tests/2_72.test.rkt)
-### 2.4. Множественные представления для абстрактных данных.
-### 2.5. Системы с обощенными операциями.
+- 2.4. Множественные представления для абстрактных данных.
+- 2.5. Системы с обощенными операциями.
   - [Exercise 2.78](./solutions/2_78.rkt) [(test)](./tests/2_78.test.rkt) *Обобщеные арефметические операции*
   - [Exercise 2.79](./solutions/2_79.rkt) [(test)](./tests/2_79.test.rkt)
   - [Exercise 2.80](./solutions/2_80.rkt) [(test)](./tests/2_80.test.rkt)
@@ -149,7 +154,7 @@ $ make run_tests
   - [Exercise 2.84](./solutions/2_84.rkt) [(test)](./tests/2_84.test.rkt)
   - [Exercise 2.87](./solutions/2_87.rkt) [(test)](./tests/2_87.test.rkt)
 ## Глава 3.  Модульность, объекты и состояние.
-### 3.1. Присваивание и внутреннее состояние объектов.
+- 3.1. Присваивание и внутреннее состояние объектов.
   - [Exercise 3.01](./solutions/3_01.rkt) [(test)](./tests/3_01.test.rkt)
   - [Exercise 3.02](./solutions/3_02.rkt) [(test)](./tests/3_02.test.rkt)
   - [Exercise 3.03](./solutions/3_03.rkt) [(test)](./tests/3_03.test.rkt)
@@ -157,8 +162,8 @@ $ make run_tests
   - [Exercise 3.05](./solutions/3_05.rkt) [(test)](./tests/3_05.test.rkt)
   - [Exercise 3.07](./solutions/3_07.rkt) [(test)](./tests/3_07.test.rkt)
   - [Exercise 3.08](./solutions/3_08.rkt) [(test)](./tests/3_08.test.rkt)
-### 3.2. Модель вычислений с окружениями.
-### 3.3. Моделирование при помощи изменяемых данных.
+- 3.2. Модель вычислений с окружениями.
+- 3.3. Моделирование при помощи изменяемых данных.
   - [Exercise 3.14](./solutions/3_14.rkt) [(test)](./tests/3_14.test.rkt)
   - [Exercise 3.16](./solutions/3_16.rkt) [(test)](./tests/3_16.test.rkt)
   - [Exercise 3.17](./solutions/3_17.rkt) [(test)](./tests/3_17.test.rkt) *Подсчет пар в структуре*
