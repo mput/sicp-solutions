@@ -1,5 +1,5 @@
 test:
-	racket tests/$(e).test.rkt
+	racket -l errortrace -t tests/$(e).test.rkt
 test_with_my_logs::
 	env PLTSTDERR="debug@my-log" racket tests/$(e).test.rkt
 
