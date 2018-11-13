@@ -179,3 +179,4 @@ $ make run_tests
   - [Part 3.3.4: JS-implementation](./solutions/digital-circuits-js) *Имитация цифровой схемы на JavaScript*
   - [Part 3.3.4: Racket-implementation](./solutions/digital-circuits.rkt) *Имитация цифровой схемы на Racket*
   - [Exercise 3.33](./solutions/3_33.rkt) [(test)](./tests/3_33.test.rkt) *Avareger on constraints*
+  - [Exercise 3.35](./solutions/3_35.rkt) [(test)](./tests/3_35.test.rkt) *Squarer constraint*

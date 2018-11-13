@@ -2,7 +2,8 @@
 
 #| Propogation of constraints |#
 
-(#%provide make-connector get-value set-value! forget-value!
+(#%require (only racket/base printf))
+(#%provide make-connector get-value set-value! forget-value! has-value? connect test
            adder multiplier constant
            probe)
 
@@ -20,11 +21,12 @@
             (else 'ignored)))
     (define (forget-my-value retractor)
       (if (eq? retractor informant)
-          (begin (set! informant false)
-                 (for-each-except retractor
-                                  inform-about-no-value
-                                  constraints))
-          'ignored))
+        (begin
+               (set! informant false)
+               (for-each-except retractor
+                                inform-about-no-value
+                                constraints))
+        'ignored))
     (define (connect new-constraint)
       (if (not (memq new-constraint constraints))
           (set! constraints
@@ -39,6 +41,7 @@
             ((eq? request 'set-value!) set-my-value)
             ((eq? request 'forget) forget-my-value)
             ((eq? request 'connect) connect)
+            ((eq? request 'test) (lambda () (printf "Value: ~s, ingormant: ~s~n" value informant)))
             (else (error "Unknown operation -- CONNECTOR"
                          request))))
     me))
@@ -61,6 +64,8 @@
   ((connector 'forget) retractor))
 (define (connect connector new-constraint)
   ((connector 'connect) new-constraint))
+(define (test connector)
+  ((connector 'test)))
 
 ;; Constraints communication "syntax sugar"
 
@@ -101,6 +106,7 @@
   (connect a2 me)
   (connect sum me)
   me)
+
 
 (define (multiplier m1 m2 product)
   (define (process-new-value)
