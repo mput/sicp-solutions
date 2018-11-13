@@ -1,8 +1,8 @@
-#lang sicp
+#lang racket
 
-(#%require rackunit  rackunit/text-ui)
-(#%require "../solutions/constraints.rkt")
-(#%require "../solutions/3_35.rkt")
+(require rackunit  rackunit/text-ui)
+(require "../solutions/constraints.rkt")
+(require "../solutions/3_35.rkt")
 
 
 (define tests

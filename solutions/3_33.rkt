@@ -1,8 +1,8 @@
-#lang sicp
+#lang racket
 #| Solution for exercise 3_33. |#
 
-(#%require "../solutions/constraints.rkt")
-(#%provide avereger)
+(require "../solutions/constraints.rkt")
+(provide avereger)
 
 (define (avereger a b c)
   (define h1 (make-connector))

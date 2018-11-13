@@ -1,9 +1,9 @@
-#lang sicp
+#lang racket
 
 #| Propogation of constraints |#
 
-(#%require (only racket/base printf))
-(#%provide make-connector get-value set-value! forget-value! has-value? connect test
+;; (require (only racket/base printf))
+(provide make-connector get-value set-value! forget-value! has-value? connect test
            adder multiplier constant
            probe)
 
@@ -30,10 +30,11 @@
     (define (connect new-constraint)
       (if (not (memq new-constraint constraints))
           (set! constraints
-                (cons new-constraint constraints)))
+                (cons new-constraint constraints))
+          'done)
       (if (has-value? me)
-          (inform-about-value new-constraint))
-      'done)
+          (inform-about-value new-constraint)
+          'done))
     (define (me request)
       (cond ((eq? request 'has-value?)
              (if informant true false))

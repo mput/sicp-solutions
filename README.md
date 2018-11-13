@@ -95,7 +95,7 @@ $ make run_tests
   - [Exercise 2.08](./solutions/2_08.rkt) [(test)](./tests/2_08.test.rkt)
   - [Exercise 2.09](./solutions/2_09.rkt) [(test)](./tests/2_09.test.rkt)
   - [Exercise 2.12](./solutions/2_12.rkt) [(test)](./tests/2_12.test.rkt)
-- 2.2. Иерархарические данные и свойство замыкания.
+- 2.2. Иерархические данные и свойство замыкания.
   - [Exercise 2.17](./solutions/2_17.rkt) [(test)](./tests/2_17.test.rkt) *Получение последней пары из списка.*
   - [Exercise 2.18](./solutions/2_18.rkt) [(test)](./tests/2_18.test.rkt) *Reverse list.*
   - [Exercise 2.19](./solutions/2_19.rkt) [(test)](./tests/2_19.test.rkt)
@@ -105,7 +105,7 @@ $ make run_tests
   - [Exercise 2.24](./solutions/2_24.jpg)
   - [Exercise 2.25](./solutions/2_25.rkt) [(test)](./tests/2_25.test.rkt)
   - [Exercise 2.27](./solutions/2_27.rkt) [(test)](./tests/2_27.test.rkt) *Deep-reverse*
-  - [Exercise 2.28](./solutions/2_28.rkt) [(test)](./tests/2_28.test.rkt) *"Распремление" дерева*
+  - [Exercise 2.28](./solutions/2_28.rkt) [(test)](./tests/2_28.test.rkt) *"Распрямление" дерева*
   - [Exercise 2.29](./solutions/2_29.rkt) [(test)](./tests/2_29.test.rkt) *Бинарный мобиль и его сбалансированность*
   - [Exercise 2.30](./solutions/2_30.rkt) [(test)](./tests/2_30.test.rkt)
   - [Exercise 2.31](./solutions/2_31.rkt) [(test)](./tests/2_31.test.rkt) *Tree map*
@@ -117,7 +117,7 @@ $ make run_tests
   - [Exercise 2.39](./solutions/2_39.rkt) [(test)](./tests/2_39.test.rkt) *reverse с помощью foldr & foldl*
   - [Exercise 2.40](./solutions/2_40.rkt) [(test)](./tests/2_40.test.rkt)
   - [Exercise 2.41](./solutions/2_41.rkt) [(test)](./tests/2_41.test.rkt)
-  - [Exercise 2.42](./solutions/2_42.rkt) [(test)](./tests/2_42.test.rkt) *Задача о восьми ферьзях.*
+  - [Exercise 2.42](./solutions/2_42.rkt) [(test)](./tests/2_42.test.rkt) *Задача о восьми ферзях.*
   - [Exercise 2.44](./solutions/2_44.rkt) *Язык описания изображений*
   - [Exercise 2.45](./solutions/2_45.rkt)
   - [Exercise 2.46](./solutions/2_46.rkt) [(test)](./tests/2_46.test.rkt)
@@ -128,7 +128,7 @@ $ make run_tests
 - 2.3. Символьные данные.
   - [Exercise 2.54](./solutions/2_54.rkt) [(test)](./tests/2_54.test.rkt)
   - [Exercise 2.56](./solutions/2_56.rkt) [(test)](./tests/2_56.test.rkt) *Взятие производной*
-  - [Exercise 2.57](./solutions/2_57.rkt) [(test)](./tests/2_57.test.rkt) *Взятие производных от сумм и произведений с любым колличества термов*
+  - [Exercise 2.57](./solutions/2_57.rkt) [(test)](./tests/2_57.test.rkt) *Взятие производных от сумм и произведений с любым количества термов*
   - [Exercise 2.58](./solutions/2_58.rkt) [(test)](./tests/2_58.test.rkt)
   - [Exercise 2.59](./solutions/2_59.rkt) [(test)](./tests/2_59.test.rkt) *Множества представленные в виде неупорядоченных списков*
   - [Exercise 2.60](./solutions/2_60.rkt) [(test)](./tests/2_60.test.rkt)
@@ -144,8 +144,8 @@ $ make run_tests
   - [Exercise 2.70](./solutions/2_70.rkt)
   - [Exercise 2.72](./solutions/2_72.rkt) [(test)](./tests/2_72.test.rkt)
 - 2.4. Множественные представления для абстрактных данных.
-- 2.5. Системы с обощенными операциями.
-  - [Exercise 2.78](./solutions/2_78.rkt) [(test)](./tests/2_78.test.rkt) *Обобщеные арефметические операции*
+- 2.5. Системы с обобщенными операциями.
+  - [Exercise 2.78](./solutions/2_78.rkt) [(test)](./tests/2_78.test.rkt) *Обобщенные арифметические операции*
   - [Exercise 2.79](./solutions/2_79.rkt) [(test)](./tests/2_79.test.rkt)
   - [Exercise 2.80](./solutions/2_80.rkt) [(test)](./tests/2_80.test.rkt)
   - [Exercise 2.81](./solutions/2_81.rkt) [(test)](./tests/2_81.test.rkt)
@@ -168,7 +168,7 @@ $ make run_tests
   - [Exercise 3.16](./solutions/3_16.rkt) [(test)](./tests/3_16.test.rkt)
   - [Exercise 3.17](./solutions/3_17.rkt) [(test)](./tests/3_17.test.rkt) *Подсчет пар в структуре*
   - [Exercise 3.18](./solutions/3_18.rkt) [(test)](./tests/3_18.test.rkt) *Поиск цикла в списке*
-  - [Exercise 3.19](./solutions/3_19.rkt) [(test)](./tests/3_19.test.rkt) *Поски цикла в списке по алгоритму "кролика и черепахи"*
+  - [Exercise 3.19](./solutions/3_19.rkt) [(test)](./tests/3_19.test.rkt) *Поиск цикла в списке по алгоритму "кролика и черепахи"*
   - [Exercise 3.21](./solutions/3_21.rkt) [(test)](./tests/3_21.test.rkt)
   - [Exercise 3.22](./solutions/3_22.rkt) [(test)](./tests/3_22.test.rkt) *Реализация очередей*
   - [Exercise 3.23](./solutions/3_23.rkt) [(test)](./tests/3_23.test.rkt) *Реализация двусторонней очереди*
@@ -180,3 +180,4 @@ $ make run_tests
   - [Part 3.3.4: Racket-implementation](./solutions/digital-circuits.rkt) *Имитация цифровой схемы на Racket*
   - [Exercise 3.33](./solutions/3_33.rkt) [(test)](./tests/3_33.test.rkt) *Avareger on constraints*
   - [Exercise 3.35](./solutions/3_35.rkt) [(test)](./tests/3_35.test.rkt) *Squarer constraint*
+  - [Exercise 3.37](./solutions/3_37.rkt) [(test)](./tests/3_37.test.rkt)

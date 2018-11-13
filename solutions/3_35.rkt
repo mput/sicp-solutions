@@ -1,9 +1,8 @@
-#lang sicp
+#lang racket
 #| Solution for exercise 3_35. |#
 
-(#%require "../solutions/constraints.rkt")
-#| (#%require "../solutions/utils.rkt") |#
-(#%provide squarer)
+(require "../solutions/constraints.rkt")
+(provide squarer)
 
 (define (squarer a b)
   (define (process-new-value)
