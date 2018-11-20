@@ -183,3 +183,4 @@ $ make run_tests
   - [Exercise 3.37](./solutions/3_37.rkt) [(test)](./tests/3_37.test.rkt) *"Ограничительные" версии арифметических операций в виде процедур*
 - 3.4. Парралелизм: время имеет значение.
   - [Exercise 3.47](./solutions/3_47.rkt) *Реализация семафора*
+  - [Exercise 3.50](./solutions/3_50.rkt) [(test)](./tests/3_50.test.rkt)
