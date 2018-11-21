@@ -186,3 +186,4 @@ $ make run_tests
 - 3.5. Потоки.
   - [Exercise 3.50](./solutions/3_50.rkt) [(test)](./tests/3_50.test.rkt)
   - [Exercise 3.51](./solutions/3_51.rkt)
+  - [Exercise 3.52](./solutions/3_52.rkt)
